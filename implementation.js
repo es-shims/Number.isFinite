@@ -1,5 +1,7 @@
 'use strict';
 
+var globalIsFinite = isFinite;
+
 module.exports = function isFinite(value) {
-	// TOOD
+	return typeof value === 'number' && globalIsFinite(value);
 };

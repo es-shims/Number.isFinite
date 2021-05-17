@@ -3,5 +3,5 @@
 var implementation = require('./implementation');
 
 module.exports = function getPolyfill() {
-	// TODO
+	return Number.isFinite || implementation;
 };

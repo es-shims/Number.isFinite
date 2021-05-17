@@ -5,6 +5,6 @@ var getPolyfill = require('./polyfill');
 
 module.exports = function shimMathIsFinite() {
 	var polyfill = getPolyfill();
-	// TODO
+	define(Number, { isFinite: polyfill });
 	return polyfill;
 };
