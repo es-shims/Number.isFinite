@@ -1,7 +1,7 @@
 # Number.isFinite <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-![github actions][actions-image]][actions-url]
-![coverage][codecov-image]][codecov-url]
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
