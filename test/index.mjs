@@ -16,9 +16,9 @@ test('named exports', async (t) => {
 	);
 
 	const { shim, getPolyfill, implementation } = isFiniteModule;
-	t.equal(await import('number.isfinite/shim'), shim, 'shim named export matches deep export');
-	t.equal(await import('number.isfinite/implementation'), implementation, 'implementation named export matches deep export');
-	t.equal(await import('number.isfinite/polyfill'), getPolyfill, 'getPolyfill named export matches deep export');
+	t.equal((await import('number.isfinite/shim')).default, shim, 'shim named export matches deep export');
+	t.equal((await import('number.isfinite/implementation')).default, implementation, 'implementation named export matches deep export');
+	t.equal((await import('number.isfinite/polyfill')).default, getPolyfill, 'getPolyfill named export matches deep export');
 
 	t.end();
 });
