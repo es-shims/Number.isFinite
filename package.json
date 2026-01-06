@@ -26,7 +26,7 @@
 		"lint": "eslint --ext=js,mjs .",
 		"postlint": "es-shim-api --bound",
 		"tests-only": "nyc tape 'test/**/*.js'",
-		"tests-esm": "nyc node test/index.mjs",
+		"tests-esm": "nyc tape 'test/**/*.mjs'",
 		"test": "npm run tests-only && npm run tests-esm",
 		"posttest": "npx npm@\">= 10.2\" audit --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
