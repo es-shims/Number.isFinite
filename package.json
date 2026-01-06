@@ -70,8 +70,8 @@
 		"tape": "^5.9.0"
 	},
 	"dependencies": {
-		"call-bind": "^1.0.2",
-		"define-properties": "^1.1.4"
+		"call-bind": "^1.0.8",
+		"define-properties": "^1.2.1"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
